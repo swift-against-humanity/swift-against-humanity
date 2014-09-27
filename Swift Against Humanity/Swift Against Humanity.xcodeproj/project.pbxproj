@@ -14,6 +14,8 @@
 		BEA86C6119D74884002818F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C5F19D74884002818F4 /* LaunchScreen.xib */; };
 		BEA86C6D19D74884002818F4 /* Swift_Against_HumanityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86C6C19D74884002818F4 /* Swift_Against_HumanityTests.swift */; };
 		BEA86C7719D74948002818F4 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA86C7619D74948002818F4 /* GameKit.framework */; };
+		BEA86C7B19D74B0A002818F4 /* cards_answers.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C7919D74B0A002818F4 /* cards_answers.txt */; };
+		BEA86C7C19D74B0A002818F4 /* cards_questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C7A19D74B0A002818F4 /* cards_questions.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		BEA86C6B19D74884002818F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA86C6C19D74884002818F4 /* Swift_Against_HumanityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Against_HumanityTests.swift; sourceTree = "<group>"; };
 		BEA86C7619D74948002818F4 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		BEA86C7919D74B0A002818F4 /* cards_answers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cards_answers.txt; sourceTree = "<group>"; };
+		BEA86C7A19D74B0A002818F4 /* cards_questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cards_questions.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		BEA86C5319D74884002818F4 /* Swift Against Humanity */ = {
 			isa = PBXGroup;
 			children = (
+				BEA86C7819D74AF4002818F4 /* Resources */,
 				BEA86C5619D74884002818F4 /* AppDelegate.swift */,
 				BEA86C5819D74884002818F4 /* ViewController.swift */,
 				BEA86C5A19D74884002818F4 /* Main.storyboard */,
@@ -114,6 +119,15 @@
 				BEA86C6B19D74884002818F4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEA86C7819D74AF4002818F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEA86C7919D74B0A002818F4 /* cards_answers.txt */,
+				BEA86C7A19D74B0A002818F4 /* cards_questions.txt */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +218,8 @@
 			files = (
 				BEA86C5C19D74884002818F4 /* Main.storyboard in Resources */,
 				BEA86C6119D74884002818F4 /* LaunchScreen.xib in Resources */,
+				BEA86C7B19D74B0A002818F4 /* cards_answers.txt in Resources */,
+				BEA86C7C19D74B0A002818F4 /* cards_questions.txt in Resources */,
 				BEA86C5E19D74884002818F4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
