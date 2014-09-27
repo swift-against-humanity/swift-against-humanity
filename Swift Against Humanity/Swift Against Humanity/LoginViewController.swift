@@ -23,7 +23,8 @@ class LoginViewController: UIViewController {
 
 
     @IBAction func touchedLoginButton(sender: AnyObject) {
-        GCHelper.sharedInstance.showGameCenter(self, viewState: GKGameCenterViewControllerState.Default)
+        GCHelper.sharedInstance.authenticateLocalUser()
+        
     }
 }
 
