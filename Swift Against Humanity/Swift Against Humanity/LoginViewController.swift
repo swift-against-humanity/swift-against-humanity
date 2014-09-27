@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import GameKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +22,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func touchedLoginButton(sender: AnyObject) {
+        GCHelper.sharedInstance.showGameCenter(self, viewState: GKGameCenterViewControllerState.Default)
+    }
 }
 
