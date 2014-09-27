@@ -14,8 +14,8 @@
 		BE46619119D7644000967F9C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE46619019D7644000967F9C /* Media.xcassets */; };
 		BE46619319D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46619219D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift */; };
 		BE46619519D7728C00967F9C /* UIColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46619419D7728C00967F9C /* UIColorUtils.swift */; };
+		9B72C46019D7692100A55B90 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B72C45F19D7692100A55B90 /* LoginViewController.swift */; };
 		BEA86C5719D74884002818F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86C5619D74884002818F4 /* AppDelegate.swift */; };
-		BEA86C5919D74884002818F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86C5819D74884002818F4 /* ViewController.swift */; };
 		BEA86C5C19D74884002818F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C5A19D74884002818F4 /* Main.storyboard */; };
 		BEA86C5E19D74884002818F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C5D19D74884002818F4 /* Images.xcassets */; };
 		BEA86C6119D74884002818F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C5F19D74884002818F4 /* LaunchScreen.xib */; };
@@ -45,10 +45,10 @@
 		BE46619019D7644000967F9C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		BE46619219D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		BE46619419D7728C00967F9C /* UIColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorUtils.swift; sourceTree = "<group>"; };
+		9B72C45F19D7692100A55B90 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BEA86C5119D74884002818F4 /* Swift Against Humanity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Against Humanity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA86C5519D74884002818F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA86C5619D74884002818F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BEA86C5819D74884002818F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BEA86C5B19D74884002818F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEA86C5D19D74884002818F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BEA86C6019D74884002818F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				9B685DF719D756CF00ECDDCF /* GCHelper.swift */,
 				BEA86C7819D74AF4002818F4 /* Resources */,
 				BEA86C5619D74884002818F4 /* AppDelegate.swift */,
-				BEA86C5819D74884002818F4 /* ViewController.swift */,
+				9B72C45F19D7692100A55B90 /* LoginViewController.swift */,
 				BEA86C5A19D74884002818F4 /* Main.storyboard */,
 				BEA86C5D19D74884002818F4 /* Images.xcassets */,
 				BEA86C5F19D74884002818F4 /* LaunchScreen.xib */,
@@ -268,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B72C46019D7692100A55B90 /* LoginViewController.swift in Sources */,
 				BEA86C8619D75A48002818F4 /* AnswerCardViewCell.swift in Sources */,
 				BEA86C5919D74884002818F4 /* ViewController.swift in Sources */,
 				BE46619319D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift in Sources */,
