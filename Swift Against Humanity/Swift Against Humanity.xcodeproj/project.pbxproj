@@ -19,6 +19,9 @@
 		BEA86C6D19D74884002818F4 /* Swift_Against_HumanityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86C6C19D74884002818F4 /* Swift_Against_HumanityTests.swift */; };
 		BEA86C7719D74948002818F4 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA86C7619D74948002818F4 /* GameKit.framework */; };
 		BEA86C8019D7533D002818F4 /* AnswerCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C7F19D7533D002818F4 /* AnswerCardViewCell.xib */; };
+		BEA86C8319D758A7002818F4 /* AnswerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86C8119D758A7002818F4 /* AnswerCollectionViewController.swift */; };
+		BEA86C8419D758A7002818F4 /* AnswerCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C8219D758A7002818F4 /* AnswerCollectionViewController.xib */; };
+		BEA86C8619D75A48002818F4 /* AnswerCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86C8519D75A48002818F4 /* AnswerCardViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		BEA86C6C19D74884002818F4 /* Swift_Against_HumanityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Against_HumanityTests.swift; sourceTree = "<group>"; };
 		BEA86C7619D74948002818F4 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		BEA86C7F19D7533D002818F4 /* AnswerCardViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerCardViewCell.xib; sourceTree = "<group>"; };
+		BEA86C8119D758A7002818F4 /* AnswerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCollectionViewController.swift; sourceTree = "<group>"; };
+		BEA86C8219D758A7002818F4 /* AnswerCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerCollectionViewController.xib; sourceTree = "<group>"; };
+		BEA86C8519D75A48002818F4 /* AnswerCardViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCardViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 				BEA86C5F19D74884002818F4 /* LaunchScreen.xib */,
 				BEA86C5419D74884002818F4 /* Supporting Files */,
 				BEA86C7F19D7533D002818F4 /* AnswerCardViewCell.xib */,
+				BEA86C8519D75A48002818F4 /* AnswerCardViewCell.swift */,
+				BEA86C8119D758A7002818F4 /* AnswerCollectionViewController.swift */,
+				BEA86C8219D758A7002818F4 /* AnswerCollectionViewController.xib */,
 			);
 			path = "Swift Against Humanity";
 			sourceTree = "<group>";
@@ -230,6 +239,7 @@
 				BEA86C5C19D74884002818F4 /* Main.storyboard in Resources */,
 				9B685DFD19D756CF00ECDDCF /* Questions.txt in Resources */,
 				BEA86C6119D74884002818F4 /* LaunchScreen.xib in Resources */,
+				BEA86C8419D758A7002818F4 /* AnswerCollectionViewController.xib in Resources */,
 				BEA86C5E19D74884002818F4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA86C8619D75A48002818F4 /* AnswerCardViewCell.swift in Sources */,
 				BEA86C5919D74884002818F4 /* ViewController.swift in Sources */,
+				BEA86C8319D758A7002818F4 /* AnswerCollectionViewController.swift in Sources */,
 				9B685DFA19D756CF00ECDDCF /* Game.swift in Sources */,
 				BEA86C5719D74884002818F4 /* AppDelegate.swift in Sources */,
 				9B685DFB19D756CF00ECDDCF /* GCHelper.swift in Sources */,
