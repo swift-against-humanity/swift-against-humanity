@@ -16,6 +16,7 @@
 		BEA86C7719D74948002818F4 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA86C7619D74948002818F4 /* GameKit.framework */; };
 		BEA86C7B19D74B0A002818F4 /* cards_answers.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C7919D74B0A002818F4 /* cards_answers.txt */; };
 		BEA86C7C19D74B0A002818F4 /* cards_questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C7A19D74B0A002818F4 /* cards_questions.txt */; };
+		BEA86C8019D7533D002818F4 /* AnswerCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C7F19D7533D002818F4 /* AnswerCardViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		BEA86C7619D74948002818F4 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		BEA86C7919D74B0A002818F4 /* cards_answers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cards_answers.txt; sourceTree = "<group>"; };
 		BEA86C7A19D74B0A002818F4 /* cards_questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cards_questions.txt; sourceTree = "<group>"; };
+		BEA86C7F19D7533D002818F4 /* AnswerCardViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerCardViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				BEA86C5D19D74884002818F4 /* Images.xcassets */,
 				BEA86C5F19D74884002818F4 /* LaunchScreen.xib */,
 				BEA86C5419D74884002818F4 /* Supporting Files */,
+				BEA86C7F19D7533D002818F4 /* AnswerCardViewCell.xib */,
 			);
 			path = "Swift Against Humanity";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA86C8019D7533D002818F4 /* AnswerCardViewCell.xib in Resources */,
 				BEA86C5C19D74884002818F4 /* Main.storyboard in Resources */,
 				BEA86C6119D74884002818F4 /* LaunchScreen.xib in Resources */,
 				BEA86C7B19D74B0A002818F4 /* cards_answers.txt in Resources */,
