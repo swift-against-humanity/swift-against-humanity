@@ -13,6 +13,7 @@ let reuseIdentifier = "AnswerCardCell"
 class AnswerCollectionViewController: UICollectionViewController {
     
     let answers = ["Hello", "World", "Something", "Rather", "Blah", "Blagasdfadf"]
+    let colors = [0x44f197,0x309cf7,0xf78930,0x76d459,0x59d499,0x59d4c7,0xe86fb3,0xe86f6f,0x767676]
     
     @IBOutlet weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
     
@@ -24,23 +25,12 @@ class AnswerCollectionViewController: UICollectionViewController {
 
         // Register cell classes
         self.collectionView?.registerNib(UINib(nibName: "AnswerCardViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView?.pagingEnabled = true
 //        self.collectionView?.registerClass(AnswerCardViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 //        self.collectionView?.collectionViewLayout = self.collectionViewFlowLayout
 
         // Do any additional setup after loading the view.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -54,15 +44,13 @@ class AnswerCollectionViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as AnswerCardViewCell
         
-        if indexPath.row < answers.count {
-            cell.cardTextLabel.text = answers[indexPath.row]
-        }
+        cell.cardTextLabel.text = answers[indexPath.row]
+        cell.backgroundColor = UIColorUtils.UIColorFromRGB(colors[indexPath.row])
+//        cell.backgroundColor = UIColor()
         // Configure the cell
     
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
