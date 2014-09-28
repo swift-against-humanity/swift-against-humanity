@@ -11,6 +11,8 @@ import UIKit
 class AnswerCardViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cardTextLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var selectedButton: UIImageView!
     
     override func awakeFromNib() {
         NSLog("Awaking from nib")

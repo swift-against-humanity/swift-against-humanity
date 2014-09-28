@@ -10,27 +10,47 @@
             <rect key="frame" x="0.0" y="0.0" width="275" height="400"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5en-8m-QKr">
-                    <rect key="frame" x="28" y="27" width="218" height="35"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5en-8m-QKr">
+                    <rect key="frame" x="28" y="120" width="218" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="O6t-9U-9yd"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="25"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vb-2z-xDh">
+                    <rect key="frame" x="28" y="21" width="218" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="218" id="i3n-7s-Cq1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkbox" translatesAutoresizingMaskIntoConstraints="NO" id="dqq-7F-Ff1">
+                    <rect key="frame" x="123" y="364" width="28" height="28"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="5en-8m-QKr" secondAttribute="trailing" constant="29" id="1uI-9c-GrU"/>
                 <constraint firstItem="5en-8m-QKr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="UC6-dJ-RN9"/>
-                <constraint firstItem="5en-8m-QKr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="27" id="uGl-1x-JoZ"/>
+                <constraint firstAttribute="trailing" secondItem="9vb-2z-xDh" secondAttribute="trailing" constant="29" id="XaY-np-m2S"/>
+                <constraint firstItem="9vb-2z-xDh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="qLQ-EG-cxr"/>
+                <constraint firstItem="5en-8m-QKr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="uGl-1x-JoZ"/>
+                <constraint firstItem="9vb-2z-xDh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="21" id="xpM-Sq-5cX"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="cardTextLabel" destination="5en-8m-QKr" id="CzM-SH-8Rs"/>
+                <outlet property="selectedButton" destination="dqq-7F-Ff1" id="a6H-XA-hZI"/>
+                <outlet property="typeLabel" destination="9vb-2z-xDh" id="KJM-Xd-TK2"/>
             </connections>
-            <point key="canvasLocation" x="360" y="448"/>
+            <point key="canvasLocation" x="359.5" y="448"/>
         </view>
     </objects>
+    <resources>
+        <image name="checkbox" width="56" height="56"/>
+    </resources>
 </document>
