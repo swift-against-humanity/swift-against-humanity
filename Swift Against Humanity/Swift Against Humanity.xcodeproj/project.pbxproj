@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		72DFCBAB19D753DB00CEFE6B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFCBAA19D753DB00CEFE6B /* Game.swift */; };
 		72DFCBAD19D7556000CEFE6B /* GCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFCBAC19D7556000CEFE6B /* GCHelper.swift */; };
+		72DFCBAF19D775E000CEFE6B /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFCBAE19D775E000CEFE6B /* Deck.swift */; };
+		72DFCBB219D778BC00CEFE6B /* Answers.txt in Resources */ = {isa = PBXBuildFile; fileRef = 72DFCBB019D778BC00CEFE6B /* Answers.txt */; };
+		72DFCBB319D778BC00CEFE6B /* Questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 72DFCBB119D778BC00CEFE6B /* Questions.txt */; };
+		72DFCBB519D77CA500CEFE6B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFCBB419D77CA500CEFE6B /* Card.swift */; };
+		72DFCBB919D7898B00CEFE6B /* TurnData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFCBB819D7898B00CEFE6B /* TurnData.swift */; };
 		BEA86C5719D74884002818F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86C5619D74884002818F4 /* AppDelegate.swift */; };
 		BEA86C5919D74884002818F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86C5819D74884002818F4 /* ViewController.swift */; };
 		BEA86C5C19D74884002818F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C5A19D74884002818F4 /* Main.storyboard */; };
@@ -16,8 +21,6 @@
 		BEA86C6119D74884002818F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C5F19D74884002818F4 /* LaunchScreen.xib */; };
 		BEA86C6D19D74884002818F4 /* Swift_Against_HumanityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86C6C19D74884002818F4 /* Swift_Against_HumanityTests.swift */; };
 		BEA86C7719D74948002818F4 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA86C7619D74948002818F4 /* GameKit.framework */; };
-		BEA86C7B19D74B0A002818F4 /* cards_answers.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C7919D74B0A002818F4 /* cards_answers.txt */; };
-		BEA86C7C19D74B0A002818F4 /* cards_questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C7A19D74B0A002818F4 /* cards_questions.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,11 @@
 /* Begin PBXFileReference section */
 		72DFCBAA19D753DB00CEFE6B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		72DFCBAC19D7556000CEFE6B /* GCHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCHelper.swift; sourceTree = "<group>"; };
+		72DFCBAE19D775E000CEFE6B /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		72DFCBB019D778BC00CEFE6B /* Answers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Answers.txt; sourceTree = "<group>"; };
+		72DFCBB119D778BC00CEFE6B /* Questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Questions.txt; sourceTree = "<group>"; };
+		72DFCBB419D77CA500CEFE6B /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		72DFCBB819D7898B00CEFE6B /* TurnData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnData.swift; sourceTree = "<group>"; };
 		BEA86C5119D74884002818F4 /* Swift Against Humanity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Against Humanity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA86C5519D74884002818F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA86C5619D74884002818F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,8 +52,6 @@
 		BEA86C6B19D74884002818F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA86C6C19D74884002818F4 /* Swift_Against_HumanityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Against_HumanityTests.swift; sourceTree = "<group>"; };
 		BEA86C7619D74948002818F4 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		BEA86C7919D74B0A002818F4 /* cards_answers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cards_answers.txt; sourceTree = "<group>"; };
-		BEA86C7A19D74B0A002818F4 /* cards_questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cards_questions.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				BEA86C5419D74884002818F4 /* Supporting Files */,
 				72DFCBAA19D753DB00CEFE6B /* Game.swift */,
 				72DFCBAC19D7556000CEFE6B /* GCHelper.swift */,
+				72DFCBAE19D775E000CEFE6B /* Deck.swift */,
+				72DFCBB419D77CA500CEFE6B /* Card.swift */,
+				72DFCBB819D7898B00CEFE6B /* TurnData.swift */,
 			);
 			path = "Swift Against Humanity";
 			sourceTree = "<group>";
@@ -130,8 +139,8 @@
 		BEA86C7819D74AF4002818F4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BEA86C7919D74B0A002818F4 /* cards_answers.txt */,
-				BEA86C7A19D74B0A002818F4 /* cards_questions.txt */,
+				72DFCBB019D778BC00CEFE6B /* Answers.txt */,
+				72DFCBB119D778BC00CEFE6B /* Questions.txt */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -222,10 +231,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72DFCBB219D778BC00CEFE6B /* Answers.txt in Resources */,
 				BEA86C5C19D74884002818F4 /* Main.storyboard in Resources */,
+				72DFCBB319D778BC00CEFE6B /* Questions.txt in Resources */,
 				BEA86C6119D74884002818F4 /* LaunchScreen.xib in Resources */,
-				BEA86C7B19D74B0A002818F4 /* cards_answers.txt in Resources */,
-				BEA86C7C19D74B0A002818F4 /* cards_questions.txt in Resources */,
 				BEA86C5E19D74884002818F4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,7 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				72DFCBAD19D7556000CEFE6B /* GCHelper.swift in Sources */,
+				72DFCBB519D77CA500CEFE6B /* Card.swift in Sources */,
+				72DFCBB919D7898B00CEFE6B /* TurnData.swift in Sources */,
 				BEA86C5919D74884002818F4 /* ViewController.swift in Sources */,
+				72DFCBAF19D775E000CEFE6B /* Deck.swift in Sources */,
 				BEA86C5719D74884002818F4 /* AppDelegate.swift in Sources */,
 				72DFCBAB19D753DB00CEFE6B /* Game.swift in Sources */,
 			);

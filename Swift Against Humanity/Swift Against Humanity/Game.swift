@@ -8,67 +8,38 @@
 
 import Foundation
 
-enum CardColor {
-    case White
-    case Black
-}
-
-struct Card {
-    let color: CardColor
-    let contents: String
-}
-
-class Deck {
-    let color: CardColor
-    var cards: [Card] = [Card]()
+class Game {
     
-    init(color: CardColor) {
-        self.color = color
-        switch self.color {
-        case .White:
-            self.cards = generateWhiteCards()
-        case .Black:
-            self.cards = generateBlackCards()
+    // full player data
+    class Player {
+        let playerId: String
+        var isCardCzar: Bool = false
+        var points: Int = 0
+        var hand: [Int] = [Int]()
+        var cardsPlayed: [Int] = [Int]()
+        
+        init(playerId: String) {
+            self.playerId = playerId
+        }
+        
+        func drawHand() {
         }
     }
+
+    // Same for everyone
+    // Keep in sync with each turn
+    var blackDeck = Deck.blackDeck
+    var whiteDeck = Deck.whiteDeck
     
-    func generateWhiteCards() -> [Card] {
-        cards = [Card(color: CardColor.White, contents: "hello"),
-            Card(color: CardColor.White, contents: "hello")]
-        return cards
+    // Full player data for just me
+    var myself: Player
+    
+    init(playerID: String) {
+        myself = Player(playerId: playerID)
     }
     
-    func generateBlackCards() -> [Card] {
-        return [Card]()
-    }
-    
-    func drawNextCard() -> Card? {
-        if let card = self.cards.first {
-            cards.removeAtIndex(0)
-            return card
-        } else {
-            // TODO: No cards left in deck
-            return nil
-        }
+    // Everything happens here
+    func takeTurn() -> TurnData? {
+        return nil
     }
 }
-
-let blackDeck = Deck(color: CardColor.Black)
-let whiteDeck = Deck(color: CardColor.White)
-
-class Player {
-    let name: String
-    var isCardCzar: Bool = false
-    var points: Int = 0
-    var hand: [Card] = [Card]()
-    
-    init(name: String) {
-        self.name = name
-        for i in 1...10 {
-            if let card = whiteDeck.drawNextCard() {
-                self.hand.append(card)
-            }
-        }
-    }
-}
-
