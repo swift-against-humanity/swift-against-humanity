@@ -10,14 +10,18 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if segue.identifier == "loginToGameSegue"{
-            let vc = segue.destinationViewController as GameController
-        }
-    }
+    @IBOutlet weak var personSlider: UISlider!
+    @IBOutlet weak var playerCountLabel: UILabel!
+
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+//        if segue.identifier == "answerSegue"{
+//            let vc = segue.destinationViewController as GameController
+//        }
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        personSlider.continuous = false
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -26,10 +30,19 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func onSliderValueChanged(sender: AnyObject) {
+        let slider = sender as UISlider
+        let value = slider.value
+        let roundedValue = lroundf(value)
+        playerCountLabel.text = "\(roundedValue)"
+        slider.value = Float(roundedValue)
+    }
+    
     @IBAction func touchedLoginButton(sender: AnyObject) {
-        GCHelper.sharedInstance.authenticateLocalUser()
-        self.performSegueWithIdentifier("loginToGameSegue", sender: self)
+//        GCHelper.sharedInstance.authenticateLocalUser()
+        
+        self.performSegueWithIdentifier("answerCollectionSegue", sender: self)
+        
         
     }
 }

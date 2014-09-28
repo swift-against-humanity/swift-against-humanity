@@ -12,19 +12,25 @@ let reuseIdentifier = "AnswerCardCell"
 
 class AnswerCollectionViewController: UICollectionViewController {
     
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+//        if segue.identifier == "loginToGameSegue"{
+//            let vc = segue.destinationViewController as AnswerCollectionViewController
+//        }
+//    }
+    
 //    let answers = ["Hello", "World", "Something", "Rather", "Blah", "Blagasdfadf"]
     
     let answers = [
-        Card(color: CardColor.White, contents: "Hello"),
-        Card(color: CardColor.White, contents: "World"),
-        Card(color: CardColor.White, contents: "Something"),
-        Card(color: CardColor.White, contents: "Rather"),
-        Card(color: CardColor.White, contents: "Basdfasdfj"),
-        Card(color: CardColor.White, contents: "asdfasdf"),
-        Card(color: CardColor.White, contents: "asdfasdfkasdfk"),
-        Card(color: CardColor.White, contents: "asdfasdfk"),
-        Card(color: CardColor.White, contents: "ohookieikej"),
-        Card(color: CardColor.White, contents: "378jkljkasdfj"),
+        Card(color: CardColor.White, contents: "Michelle Obama's arms"),
+        Card(color: CardColor.White, contents: "German dungeon porn"),
+        Card(color: CardColor.White, contents: "White people"),
+        Card(color: CardColor.White, contents: "Tasteful sideboob"),
+        Card(color: CardColor.White, contents: "MechaHitler"),
+        Card(color: CardColor.White, contents: "A disappointing birthday party"),
+        Card(color: CardColor.White, contents: "Puppies!"),
+        Card(color: CardColor.White, contents: "Guys who don't call"),
+        Card(color: CardColor.White, contents: "Dying"),
+        Card(color: CardColor.White, contents: "A lifetime of sadness"),
     ]
     
     let colors = [
