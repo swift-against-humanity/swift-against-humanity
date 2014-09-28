@@ -29,7 +29,9 @@ class LoginViewController: UIViewController {
 
     @IBAction func touchedLoginButton(sender: AnyObject) {
         GCHelper.sharedInstance.authenticateLocalUser()
-        self.performSegueWithIdentifier("loginToGameSegue", sender: self)
+        if (GCHelper.sharedInstance.authenticated) {
+         self.performSegueWithIdentifier("loginToGameSegue", sender: self)
+        }
         
     }
 }

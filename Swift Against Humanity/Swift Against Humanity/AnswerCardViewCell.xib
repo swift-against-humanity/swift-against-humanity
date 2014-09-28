@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AnswerCardViewCell" customModule="Swift_Against_Humanity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="275" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5en-8m-QKr">
+                    <rect key="frame" x="28" y="27" width="218" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="O6t-9U-9yd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5en-8m-QKr" secondAttribute="trailing" constant="29" id="1uI-9c-GrU"/>
+                <constraint firstItem="5en-8m-QKr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="UC6-dJ-RN9"/>
+                <constraint firstItem="5en-8m-QKr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="27" id="uGl-1x-JoZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cardTextLabel" destination="5en-8m-QKr" id="CzM-SH-8Rs"/>
+            </connections>
+            <point key="canvasLocation" x="360" y="448"/>
+        </view>
+    </objects>
+</document>
