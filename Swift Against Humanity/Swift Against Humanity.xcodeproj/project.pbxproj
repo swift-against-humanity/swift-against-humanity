@@ -16,12 +16,12 @@
 		72DFCBB919D7898B00CEFE6B /* TurnData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFCBB819D7898B00CEFE6B /* TurnData.swift */; };
 		9BF4545919D78D390097F126 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4545119D78D390097F126 /* GameController.swift */; };
 		9BF4545A19D78D390097F126 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4545219D78D390097F126 /* LoginViewController.swift */; };
-		9BF4545B19D78D390097F126 /* AnswerCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF4545319D78D390097F126 /* AnswerCardViewCell.xib */; };
+		9BF4545B19D78D390097F126 /* CardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF4545319D78D390097F126 /* CardViewCell.xib */; };
 		9BF4545C19D78D390097F126 /* AnswerCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF4545419D78D390097F126 /* AnswerCollectionViewController.xib */; };
 		9BF4545D19D78D390097F126 /* AnswerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4545519D78D390097F126 /* AnswerCollectionViewController.swift */; };
 		9BF4545E19D78D390097F126 /* AnswerCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4545619D78D390097F126 /* AnswerCollectionViewFlowLayout.swift */; };
 		9BF4545F19D78D390097F126 /* UIColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4545719D78D390097F126 /* UIColorUtils.swift */; };
-		9BF4546019D78D390097F126 /* AnswerCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4545819D78D390097F126 /* AnswerCardViewCell.swift */; };
+		9BF4546019D78D390097F126 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4545819D78D390097F126 /* CardViewCell.swift */; };
 		BE46619319D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46619219D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift */; };
 		BEA86C5719D74884002818F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86C5619D74884002818F4 /* AppDelegate.swift */; };
 		BEA86C5C19D74884002818F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA86C5A19D74884002818F4 /* Main.storyboard */; };
@@ -51,12 +51,12 @@
 		72DFCBB819D7898B00CEFE6B /* TurnData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnData.swift; sourceTree = "<group>"; };
 		9BF4545119D78D390097F126 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		9BF4545219D78D390097F126 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		9BF4545319D78D390097F126 /* AnswerCardViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerCardViewCell.xib; sourceTree = "<group>"; };
+		9BF4545319D78D390097F126 /* CardViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardViewCell.xib; sourceTree = "<group>"; };
 		9BF4545419D78D390097F126 /* AnswerCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerCollectionViewController.xib; sourceTree = "<group>"; };
 		9BF4545519D78D390097F126 /* AnswerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCollectionViewController.swift; sourceTree = "<group>"; };
 		9BF4545619D78D390097F126 /* AnswerCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		9BF4545719D78D390097F126 /* UIColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorUtils.swift; sourceTree = "<group>"; };
-		9BF4545819D78D390097F126 /* AnswerCardViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCardViewCell.swift; sourceTree = "<group>"; };
+		9BF4545819D78D390097F126 /* CardViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
 		BE46619019D7644000967F9C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		BE46619219D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		BE46619419D7728C00967F9C /* UIColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorUtils.swift; sourceTree = "<group>"; };
@@ -117,12 +117,12 @@
 			children = (
 				9BF4545119D78D390097F126 /* GameController.swift */,
 				9BF4545219D78D390097F126 /* LoginViewController.swift */,
-				9BF4545319D78D390097F126 /* AnswerCardViewCell.xib */,
+				9BF4545319D78D390097F126 /* CardViewCell.xib */,
+				9BF4545819D78D390097F126 /* CardViewCell.swift */,
 				9BF4545419D78D390097F126 /* AnswerCollectionViewController.xib */,
 				9BF4545519D78D390097F126 /* AnswerCollectionViewController.swift */,
 				9BF4545619D78D390097F126 /* AnswerCollectionViewFlowLayout.swift */,
 				9BF4545719D78D390097F126 /* UIColorUtils.swift */,
-				9BF4545819D78D390097F126 /* AnswerCardViewCell.swift */,
 				BEA86C7819D74AF4002818F4 /* Resources */,
 				BEA86C5619D74884002818F4 /* AppDelegate.swift */,
 				BEA86C5A19D74884002818F4 /* Main.storyboard */,
@@ -263,7 +263,7 @@
 			files = (
 				72DFCBB219D778BC00CEFE6B /* Answers.txt in Resources */,
 				BEA86C5C19D74884002818F4 /* Main.storyboard in Resources */,
-				9BF4545B19D78D390097F126 /* AnswerCardViewCell.xib in Resources */,
+				9BF4545B19D78D390097F126 /* CardViewCell.xib in Resources */,
 				72DFCBB319D778BC00CEFE6B /* Questions.txt in Resources */,
 				BEA86C6119D74884002818F4 /* LaunchScreen.xib in Resources */,
 				9BF4545C19D78D390097F126 /* AnswerCollectionViewController.xib in Resources */,
@@ -287,7 +287,7 @@
 			files = (
 				9BF4545A19D78D390097F126 /* LoginViewController.swift in Sources */,
 				BE46619319D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift in Sources */,
-				9BF4546019D78D390097F126 /* AnswerCardViewCell.swift in Sources */,
+				9BF4546019D78D390097F126 /* CardViewCell.swift in Sources */,
 				72DFCBAD19D7556000CEFE6B /* GCHelper.swift in Sources */,
 				72DFCBB519D77CA500CEFE6B /* Card.swift in Sources */,
 				72DFCBB919D7898B00CEFE6B /* TurnData.swift in Sources */,

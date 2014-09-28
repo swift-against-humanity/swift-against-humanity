@@ -51,7 +51,7 @@ class AnswerCollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView?.registerNib(UINib(nibName: "AnswerCardViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView?.registerNib(UINib(nibName: "CardViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
         self.collectionView?.backgroundColor = UIColor.whiteColor()
 //        self.collectionView?.pagingEnabled = true
 //        self.collectionView?.registerClass(AnswerCardViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
