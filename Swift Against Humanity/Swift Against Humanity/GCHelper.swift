@@ -103,6 +103,7 @@ class GCHelper: NSObject, GKMatchmakerViewControllerDelegate, GKGameCenterContro
             }
         } else {
             NSLog("Already authenticated")
+            self.authenticated = true
         }
     }
     
@@ -117,10 +118,9 @@ class GCHelper: NSObject, GKMatchmakerViewControllerDelegate, GKGameCenterContro
         request.minPlayers = minPlayers
         request.maxPlayers = maxPlayers
         
-        var mmvc = GKMatchmakerViewController(matchRequest: request)
-        mmvc.matchmakerDelegate = self
+        var matchMakerViewController = GKTurnBasedMatchmakerViewController(matchRequest: request)
         
-        presentingViewController.presentViewController(mmvc, animated: true, completion: nil)
+        presentingViewController.presentViewController( matchMakerViewController, animated: true, completion: nil)
     }
     
     func reportAchievementIdentifier(identifier: String, percent: Double) {

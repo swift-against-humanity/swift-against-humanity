@@ -42,8 +42,6 @@ class LoginViewController: UIViewController {
 //        GCHelper.sharedInstance.authenticateLocalUser()
         
         self.performSegueWithIdentifier("answerCollectionSegue", sender: self)
-        
-        
     }
 }
 

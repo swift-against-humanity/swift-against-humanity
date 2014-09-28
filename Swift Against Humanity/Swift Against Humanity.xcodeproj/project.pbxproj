@@ -115,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				BE46619A19D7AAB500967F9C /* LoginViewController.swift */,
+				72DFCBAC19D7556000CEFE6B /* GCHelper.swift */,
 				9BF4545119D78D390097F126 /* GameController.swift */,
 				9BF4545319D78D390097F126 /* CardViewCell.xib */,
 				9BF4545819D78D390097F126 /* CardViewCell.swift */,
@@ -131,7 +132,6 @@
 				BE46619219D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift */,
 				BE46619419D7728C00967F9C /* UIColorUtils.swift */,
 				72DFCBAA19D753DB00CEFE6B /* Game.swift */,
-				72DFCBAC19D7556000CEFE6B /* GCHelper.swift */,
 				72DFCBAE19D775E000CEFE6B /* Deck.swift */,
 				72DFCBB419D77CA500CEFE6B /* Card.swift */,
 				72DFCBB819D7898B00CEFE6B /* TurnData.swift */,
