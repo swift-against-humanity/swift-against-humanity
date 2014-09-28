@@ -9,6 +9,12 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "loginToGameSegue"{
+            let vc = segue.destinationViewController as GameController
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +29,8 @@ class LoginViewController: UIViewController {
 
     @IBAction func touchedLoginButton(sender: AnyObject) {
         GCHelper.sharedInstance.authenticateLocalUser()
+        self.performSegueWithIdentifier("loginToGameSegue", sender: self)
+        
     }
 }
 
