@@ -13,17 +13,33 @@ let reuseIdentifier = "AnswerCardCell"
 class AnswerCollectionViewController: UICollectionViewController {
     
 //    let answers = ["Hello", "World", "Something", "Rather", "Blah", "Blagasdfadf"]
-    var answers = [Card(text: "Hello", baseColor: 0x44f197),
-                   Card(text: "World", baseColor:0x309cf7 ),
-                   Card(text: "Something", baseColor: 0xf78930),
-                   Card(text: "Rather", baseColor: 0x76d459),
-                   Card(text: "Blah", baseColor: 0x59d499),
-                   Card(text: "asdfasdfasdf", baseColor: 0x59d4c7),
-                   Card(text: "something", baseColor: 0x44f197),
-                   Card(text: "asdfasd", baseColor:0x309cf7 ),
-                   Card(text: "asdfasd", baseColor: 0xf78930),
-                   Card(text: "asdfasdf", baseColor: 0x76d459)]
-        
+    
+    let answers = [
+        Card(color: CardColor.White, contents: "Hello"),
+        Card(color: CardColor.White, contents: "World"),
+        Card(color: CardColor.White, contents: "Something"),
+        Card(color: CardColor.White, contents: "Rather"),
+        Card(color: CardColor.White, contents: "Basdfasdfj"),
+        Card(color: CardColor.White, contents: "asdfasdf"),
+        Card(color: CardColor.White, contents: "asdfasdfkasdfk"),
+        Card(color: CardColor.White, contents: "asdfasdfk"),
+        Card(color: CardColor.White, contents: "ohookieikej"),
+        Card(color: CardColor.White, contents: "378jkljkasdfj"),
+    ]
+    
+    let colors = [
+        0x44f197,
+        0x309cf7,
+        0xf78930,
+        0x76d459,
+        0x59d499,
+        0x59d4c7,
+        0xe86fb3,
+        0xe86f6f,
+        0x767676,
+        0xe0af3b
+    ]
+    
     let question = "What are my parents hiding from me ?"
     
     @IBOutlet weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
@@ -72,12 +88,13 @@ class AnswerCollectionViewController: UICollectionViewController {
                 cell.typeLabel.textColor = UIColor.blackColor()
                 cell.selectedButton.hidden = false
             } else {
-                cell.backgroundColor = UIColorUtils.UIColorFromRGB(card.baseColor)
+                let color = colors[index]
+                cell.backgroundColor = UIColorUtils.UIColorFromRGB(color)
                 cell.cardTextLabel.textColor = UIColor.whiteColor()
                 cell.typeLabel.textColor = UIColor.whiteColor()
                 cell.selectedButton.hidden = true
             }
-            cell.cardTextLabel.text = card.text
+            cell.cardTextLabel.text = card.contents
             cell.typeLabel.text = "Answer"
         }
 //        cell.backgroundColor = UIColor()
