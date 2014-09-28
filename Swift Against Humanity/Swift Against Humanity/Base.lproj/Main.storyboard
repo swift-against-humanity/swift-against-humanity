@@ -5,6 +5,32 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
+        <!--Game Controller-->
+        <scene sceneID="Iqi-zg-fN6">
+            <objects>
+                <viewController storyboardIdentifier="GameController" title="Game Controller" id="Bcc-xs-6tb" customClass="GameController" customModule="Swift_Against_Humanity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="65u-hx-t1p"/>
+                        <viewControllerLayoutGuide type="bottom" id="rJM-rH-NLR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pJv-cT-zlj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kn2-Ro-T79">
+                                <rect key="frame" x="262" y="285" width="76" height="30"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VRf-8B-trE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="-120"/>
+        </scene>
         <!--Login-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -33,9 +59,13 @@
                             <constraint firstItem="1tg-E6-mWb" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="oZa-1h-HjM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Bcc-xs-6tb" kind="show" id="cZ8-kn-FUu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-46" y="-82"/>
         </scene>
     </scenes>
 </document>

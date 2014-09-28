@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import GameKit
 
 class LoginViewController: UIViewController {
 
@@ -24,7 +23,6 @@ class LoginViewController: UIViewController {
 
     @IBAction func touchedLoginButton(sender: AnyObject) {
         GCHelper.sharedInstance.authenticateLocalUser()
-        
     }
 }
 
