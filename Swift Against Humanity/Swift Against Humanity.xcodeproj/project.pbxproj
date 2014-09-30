@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		725BB9B919DA31EA00A43068 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725BB9B719DA31EA00A43068 /* GameState.swift */; };
+		725BB9BA19DA31EA00A43068 /* TurnBasedMatchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725BB9B819DA31EA00A43068 /* TurnBasedMatchHelper.swift */; };
+		725BB9BC19DA334200A43068 /* GameCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725BB9BB19DA334200A43068 /* GameCenterHelper.swift */; };
 		72DFCBAB19D753DB00CEFE6B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFCBAA19D753DB00CEFE6B /* Game.swift */; };
 		72DFCBAD19D7556000CEFE6B /* GCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFCBAC19D7556000CEFE6B /* GCHelper.swift */; };
 		72DFCBAF19D775E000CEFE6B /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFCBAE19D775E000CEFE6B /* Deck.swift */; };
 		72DFCBB219D778BC00CEFE6B /* Answers.txt in Resources */ = {isa = PBXBuildFile; fileRef = 72DFCBB019D778BC00CEFE6B /* Answers.txt */; };
 		72DFCBB319D778BC00CEFE6B /* Questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 72DFCBB119D778BC00CEFE6B /* Questions.txt */; };
 		72DFCBB519D77CA500CEFE6B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFCBB419D77CA500CEFE6B /* Card.swift */; };
-		72DFCBB919D7898B00CEFE6B /* TurnData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DFCBB819D7898B00CEFE6B /* TurnData.swift */; };
 		9BF4545919D78D390097F126 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4545119D78D390097F126 /* GameController.swift */; };
 		9BF4545B19D78D390097F126 /* CardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF4545319D78D390097F126 /* CardViewCell.xib */; };
 		9BF4545C19D78D390097F126 /* AnswerCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF4545419D78D390097F126 /* AnswerCollectionViewController.xib */; };
@@ -42,13 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		725BB9B719DA31EA00A43068 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		725BB9B819DA31EA00A43068 /* TurnBasedMatchHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnBasedMatchHelper.swift; sourceTree = "<group>"; };
+		725BB9BB19DA334200A43068 /* GameCenterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCenterHelper.swift; sourceTree = "<group>"; };
 		72DFCBAA19D753DB00CEFE6B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		72DFCBAC19D7556000CEFE6B /* GCHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCHelper.swift; sourceTree = "<group>"; };
 		72DFCBAE19D775E000CEFE6B /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		72DFCBB019D778BC00CEFE6B /* Answers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Answers.txt; sourceTree = "<group>"; };
 		72DFCBB119D778BC00CEFE6B /* Questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Questions.txt; sourceTree = "<group>"; };
 		72DFCBB419D77CA500CEFE6B /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		72DFCBB819D7898B00CEFE6B /* TurnData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnData.swift; sourceTree = "<group>"; };
 		9BF4545119D78D390097F126 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		9BF4545319D78D390097F126 /* CardViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardViewCell.xib; sourceTree = "<group>"; };
 		9BF4545419D78D390097F126 /* AnswerCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerCollectionViewController.xib; sourceTree = "<group>"; };
@@ -90,6 +94,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		725BB9BD19DA335600A43068 /* Game Center Integration */ = {
+			isa = PBXGroup;
+			children = (
+				72DFCBAC19D7556000CEFE6B /* GCHelper.swift */,
+				725BB9BB19DA334200A43068 /* GameCenterHelper.swift */,
+				725BB9B819DA31EA00A43068 /* TurnBasedMatchHelper.swift */,
+			);
+			name = "Game Center Integration";
+			sourceTree = "<group>";
+		};
+		725BB9BE19DA336600A43068 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72DFCBAE19D775E000CEFE6B /* Deck.swift */,
+				72DFCBAA19D753DB00CEFE6B /* Game.swift */,
+				725BB9B719DA31EA00A43068 /* GameState.swift */,
+				72DFCBB419D77CA500CEFE6B /* Card.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		BEA86C4819D74884002818F4 = {
 			isa = PBXGroup;
 			children = (
@@ -112,27 +137,24 @@
 		BEA86C5319D74884002818F4 /* Swift Against Humanity */ = {
 			isa = PBXGroup;
 			children = (
+				BEA86C7819D74AF4002818F4 /* Resources */,
+				BEA86C5419D74884002818F4 /* Supporting Files */,
 				BE46619A19D7AAB500967F9C /* LoginViewController.swift */,
-				72DFCBAC19D7556000CEFE6B /* GCHelper.swift */,
 				9BF4545119D78D390097F126 /* GameController.swift */,
 				9BF4545319D78D390097F126 /* CardViewCell.xib */,
 				9BF4545819D78D390097F126 /* CardViewCell.swift */,
 				9BF4545419D78D390097F126 /* AnswerCollectionViewController.xib */,
 				9BF4545519D78D390097F126 /* AnswerCollectionViewController.swift */,
-				9BF4545619D78D390097F126 /* AnswerCollectionViewFlowLayout.swift */,
-				9BF4545719D78D390097F126 /* UIColorUtils.swift */,
-				BEA86C7819D74AF4002818F4 /* Resources */,
-				BEA86C5619D74884002818F4 /* AppDelegate.swift */,
-				BEA86C5A19D74884002818F4 /* Main.storyboard */,
-				BEA86C5D19D74884002818F4 /* Images.xcassets */,
-				BEA86C5F19D74884002818F4 /* LaunchScreen.xib */,
-				BEA86C5419D74884002818F4 /* Supporting Files */,
 				BE46619219D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift */,
 				BE46619419D7728C00967F9C /* UIColorUtils.swift */,
-				72DFCBAA19D753DB00CEFE6B /* Game.swift */,
-				72DFCBAE19D775E000CEFE6B /* Deck.swift */,
-				72DFCBB419D77CA500CEFE6B /* Card.swift */,
-				72DFCBB819D7898B00CEFE6B /* TurnData.swift */,
+				BEA86C5619D74884002818F4 /* AppDelegate.swift */,
+				BEA86C5D19D74884002818F4 /* Images.xcassets */,
+				BEA86C5A19D74884002818F4 /* Main.storyboard */,
+				BEA86C5F19D74884002818F4 /* LaunchScreen.xib */,
+				725BB9BD19DA335600A43068 /* Game Center Integration */,
+				725BB9BE19DA336600A43068 /* Model */,
+				BE46619219D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift */,
+				BE46619419D7728C00967F9C /* UIColorUtils.swift */,
 			);
 			path = "Swift Against Humanity";
 			sourceTree = "<group>";
@@ -284,13 +306,15 @@
 				BE46619B19D7AAB500967F9C /* LoginViewController.swift in Sources */,
 				BE46619319D7696F00967F9C /* AnswerCollectionViewFlowLayout.swift in Sources */,
 				9BF4546019D78D390097F126 /* CardViewCell.swift in Sources */,
+				725BB9BA19DA31EA00A43068 /* TurnBasedMatchHelper.swift in Sources */,
 				72DFCBAD19D7556000CEFE6B /* GCHelper.swift in Sources */,
 				72DFCBB519D77CA500CEFE6B /* Card.swift in Sources */,
-				72DFCBB919D7898B00CEFE6B /* TurnData.swift in Sources */,
 				72DFCBAF19D775E000CEFE6B /* Deck.swift in Sources */,
+				725BB9B919DA31EA00A43068 /* GameState.swift in Sources */,
 				BEA86C5719D74884002818F4 /* AppDelegate.swift in Sources */,
 				9BF4545E19D78D390097F126 /* AnswerCollectionViewFlowLayout.swift in Sources */,
 				72DFCBAB19D753DB00CEFE6B /* Game.swift in Sources */,
+				725BB9BC19DA334200A43068 /* GameCenterHelper.swift in Sources */,
 				9BF4545F19D78D390097F126 /* UIColorUtils.swift in Sources */,
 				9BF4545919D78D390097F126 /* GameController.swift in Sources */,
 				9BF4545D19D78D390097F126 /* AnswerCollectionViewController.swift in Sources */,

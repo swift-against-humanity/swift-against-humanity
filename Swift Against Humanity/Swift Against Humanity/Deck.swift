@@ -2,7 +2,7 @@
 //  Deck.swift
 //  Swift Against Humanity
 //
-//  Created by melinda on 9/27/14.
+//  Created by Melinda Lu on 9/27/14.
 //  Copyright (c) 2014 Daniel Valencia. All rights reserved.
 //
 
@@ -16,7 +16,9 @@ class Deck {
         self.cards = cards
     }
     
-    // MARK: Static decks
+    // MARK: - Static decks
+    
+    // Fix to be able to reload from closed game
     
     struct StaticDecks {
         static var blackDeck: Deck?
@@ -43,7 +45,7 @@ class Deck {
         let possiblePath = NSBundle.mainBundle().pathForResource(fileName, ofType: "txt")
         if let path = possiblePath {
             var possibleContent = String.stringWithContentsOfFile(path, encoding: NSUTF8StringEncoding, error: nil)
-
+            
             if let content = possibleContent {
                 var lines = content.componentsSeparatedByString("\n")
                 
@@ -57,7 +59,7 @@ class Deck {
         return cards
     }
     
-    // MARK: Instance functionality
+    // MARK: - Instance functionality
     
     func nextCardIndex() -> Int? {
         
